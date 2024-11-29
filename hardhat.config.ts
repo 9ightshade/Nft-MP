@@ -1,11 +1,3 @@
-// import { HardhatUserConfig } from "hardhat/config";
-// import "@nomicfoundation/hardhat-toolbox";
-
-// const config: HardhatUserConfig = {
-//   solidity: "0.8.27",
-// };
-
-// export default config;
 require("dotenv").config();
 require("@nomiclabs/hardhat-ethers"); // Ensure this is the correct package
 const { API_URL, PRIVATE_KEY } = process.env;
@@ -23,7 +15,7 @@ module.exports = {
         },
       },
       {
-        version: "0.8.20",
+        version: "0.8.27",
         settings: {
           optimizer: {
             enabled: true,
